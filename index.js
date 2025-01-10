@@ -5,7 +5,7 @@ const app = express();
 const { Server } = require("socket.io");
 const server = http.createServer(app);
 const io = new Server(server);
-const PORT_NO = 9000;
+const PORT = 9000;
 // socket 
 
 io.on("connection", (socket) => {
@@ -20,6 +20,6 @@ app.use(express.static(path.resolve('./public')));
 app.get('/',(req,res)=>{
     return res.sendFile('/public/index.html')
 })
-server.listen(PORT_NO,()=>{
+server.listen(PORT,()=>{
     console.log("started on 9000")
 })
