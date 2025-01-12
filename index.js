@@ -21,5 +21,9 @@ app.get('/',(req,res)=>{
     return res.sendFile('/public/index.html')
 })
 server.listen(PORT_NO,()=>{
-    console.log("started on 9000")
+    console.log("started on http://localhost:9000");
+    console.log("embedded with version control");
 })
+
+//git@github.com:AmanRembersu/YoutubeDownloader.git
+//ssh-keygen -t rsa -b 4096 -C "amanrembersu13@gmail.com"
